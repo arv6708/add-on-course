@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Container */
+.project_container {
+    background: #ffffff;
+    padding: 40px 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.main_heading {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Paragraph */
+.prompt_para {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.prompt_para a {
+    text-decoration: none;
+    color: #4facfe;
+    font-weight: bold;
+}
+
+.prompt_para a:hover {
+    text-decoration: underline;
+}
+
+/* Input Group */
+.input_group {
+    margin-bottom: 15px;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input_group input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Button */
+.fetch_result {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fetch_result:hover {
+    background: #00c6ff;
+}
+
+/* Result Text */
+.result-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}

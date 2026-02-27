@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>Days Lived Calculator</title>
+</head>
+<body>
+<div class="project_container">
+    <h1 class="main_heading">Days Lived Calculator</h1>
+    <form method="POST">
+        <div class="input_group">
+            <input type="date" name="dob" required>
+        </div>
+        <button type="submit" class="fetch_result">Calculate</button>
+    </form>
+    {% if days_lived is not none %}
+    <div class="result-text" style="color:#2575fc;">You have lived approximately {{ days_lived }} days.</div>
+    {% endif %}
+    <div class="bottom-link">
+        <a href=/login>Back to Login</a>
+    </div>
+</div>
+</body>
+</html>

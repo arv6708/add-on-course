@@ -1,0 +1,79 @@
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.project_container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+.main_heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Input groups */
+.input_group {
+    margin-bottom: 15px;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.input_group input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.4);
+}
+
+/* Buttons */
+button.fetch_result {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.fetch_result:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+.prompt_para a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.prompt_para a:hover {
+    text-decoration: underline;
+}
+
+/* Result text */
+.result-text {
+    margin-top: 15px;
+    font-weight: bold;
+}

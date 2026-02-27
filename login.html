@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>Login</title>
+</head>
+<body>
+<div class="project_container">
+    <h1 class="main_heading">LOGIN</h1>
+    <form method="POST">
+        <div class="input_group">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="input_group">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="fetch_result">Log In</button>
+    </form>
+    {% if error %}
+    <div class="result-text">{{ error }}</div>
+    {% endif %}
+    <div class="bottom-link">
+        New here? <a href=/signup>Create an account</a>
+    </div>
+</div>
+</body>
+</html>

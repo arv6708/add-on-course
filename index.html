@@ -2,42 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=300, initial-scale=1.0">
-    <title>Days Lived Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='hehe.css') }}">
+    <title>Home Page</title>
 </head>
 <body>
-
-<div class="outerbox">
-  <div class="calculator">
-    <h1>Days Lived Calculator</h1> 
-    <p>Enter your date of birth:</p>
-
-    <input type="date" class="date_input" id="dob_input">
-    <button class="fetch_result" onclick="calculateDate()">Calculate</button>
-
-    <div class="result-text" id="result"></div>
-  </div>
+<div class="project_container">
+    <h1>Welcome!</h1>
+    <p><a href=/login>Login</a> | <a href=/signup>Sign Up</a> | <a href=/calculator>Calculator</a></p>
 </div>
-<script>
-function calculateDate() {
-    const dob = document.getElementById("dob_input").value;
-
-    if (!dob) {
-        document.getElementById("result").innerText = "Please select a date.";
-        return;
-    }
-
-    const dateobj = new Date(dob);
-    const today = new Date();
-
-    const datediff = Math.abs(today - dateobj);
-    const daydiff = Math.ceil(datediff / (1000 * 60 * 60 * 24));
-
-    document.getElementById("result").innerText =
-        `You have lived for approximately ${daydiff.toLocaleString()} days`;
-}
-</script>
-
 </body>
 </html>
